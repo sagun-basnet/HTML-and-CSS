@@ -1,1 +1,50 @@
-asdfasfd
+:root {
+  --primary-color: #000000;
+  --secondary-color1: #fff;
+  --secondary-color2: #fff456;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+div {
+  height: 50rem;
+  width: 70rem;
+  border: 2px solid black;
+}
+
+/* mobile  */
+@media (min-width: 480px) and (max-width: 620px) {
+  body {
+    background-color: red;
+  }
+  div {
+    width: 30rem;
+  }
+}
+
+/* Laptop */
+@media (min-width: 620px) and (max-width: 768px) {
+  body {
+    background-color: gainsboro;
+  }
+  div {
+    width: 50rem;
+  }
+}
+
+/* desktop  */
+@media (min-width: 768px) and (max-width: 1060px) {
+  body {
+    background-color: green;
+  }
+  div {
+    width: 60rem;
+  }
+}
