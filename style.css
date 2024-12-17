@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 
 div {
@@ -47,4 +47,10 @@ div {
   div {
     width: 60rem;
   }
+}
+
+#myDiv {
+  border: 2px solid red;
+  width: 5rem;
+  height: 5rem;
 }

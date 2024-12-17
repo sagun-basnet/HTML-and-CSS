@@ -60,6 +60,7 @@ const add = (a, b, c) => {
 };
 
 add(3, 5, 6);
+add(10, 11, 12);
 
 // Array methods
 let arr = [1, 4, 2, 6, 7, 8, 9, 4];
@@ -91,10 +92,22 @@ const btn2 = document.getElementsByClassName("btn");
 const btn3 = document.getElementsByTagName("button");
 const btn4 = document.querySelector(".btn");
 const btn5 = document.querySelectorAll(".btn");
+const myDiv = document.querySelector("#myDiv");
 
 console.log(btn);
 
-const btnClick = () => {
+const div = document.querySelector("#myDiv");
+
+div.innerHTML = "hello this content is from JS";
+
+btn.addEventListener("dblclick", () => {
   btn.style.backgroundColor = "blue";
+});
+
+const btnClick = () => {
   alert(btn);
 };
+
+myDiv.addEventListener("mouseover", () => {
+  alert("mouse over");
+});
