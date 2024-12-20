@@ -92,13 +92,12 @@ const btn2 = document.getElementsByClassName("btn");
 const btn3 = document.getElementsByTagName("button");
 const btn4 = document.querySelector(".btn");
 const btn5 = document.querySelectorAll(".btn");
-const myDiv = document.querySelector("#myDiv");
 
 console.log(btn);
 
-const div = document.querySelector("#myDiv");
+// const div = document.querySelector("#myDiv");
 
-div.innerHTML = "hello this content is from JS";
+// div.innerHTML = "hello this content is from JS";
 
 btn.addEventListener("dblclick", () => {
   btn.style.backgroundColor = "blue";
@@ -108,6 +107,27 @@ const btnClick = () => {
   alert(btn);
 };
 
-myDiv.addEventListener("mouseover", () => {
-  alert("mouse over");
+const myDiv = document.querySelector("#myDiv");
+const input = document.querySelector("#inp");
+
+myDiv.addEventListener("keyup", () => {
+  myDiv.style.backgroundColor = "blue";
 });
+
+const handleChange = (e) => {
+  // console.log(e);
+  alert("asdf");
+};
+
+const formInput = document.querySelector("#txt");
+
+formInput.addEventListener("onchange", () => {
+  alert("hello");
+});
+
+const handleSubmit = (e) => {
+  formInput.style.backgroundColor = "blue";
+  e.preventDefault();
+  console.log(e);
+  alert(e);
+};
